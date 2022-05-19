@@ -1,0 +1,106 @@
+.todos {
+  width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fafafa;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+  .todo {
+    display: flex;
+    padding: 10px 15px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+
+    &:nth-child(even) {
+      background-color: #eee;
+    }
+    &::last-of-type {
+      border-bottom: 0;
+    }
+    .id {
+      flex: 1 1 50px;
+    }
+    .content {
+      flex: 1 1 100%;
+      cursor: pointer;
+    }
+    &.done {
+      .content {
+        text-decoration: line-through;
+      }
+    }
+
+    .delete {
+      display: block;
+      width: 100%;
+      max-width: 200px;
+      appearance: none;
+      border: none;
+      outline: none;
+      background: none;
+
+      cursor: pointer;
+
+      background-color: #fe4880;
+      color: #fff;
+      margin: 15px auto;
+
+      padding: 10px 15px;
+      font-size: 18px;
+      font-weight: 700;
+
+      &:hover {
+        background-color: #ff5a5f;
+      }
+    }
+    .id {
+      width: 50px;
+      text-align: center;
+    }
+    .content {
+      flex: 1 1 100%;
+    }
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+
+
+    input {
+      text-align: center;
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      outline: none;
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    button {
+      width: 80%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      outline: none;
+      font-size: 18px;
+      font-weight: 700;
+      cursor: pointer;
+      background-color: #fe4880;
+      color: #fff;
+      &:hover {
+        background-color: #ff5a5f;
+      }
+    }
+  }
+
+
+
+}

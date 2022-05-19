@@ -2,6 +2,22 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.6.
 
+## For Created new APP
+
+npm i -g @angular/cli --> for installation angular
+ng new [PROJECT_NAME] --directory ./ --> for create a new project for this folder
+
+## Create Components Folder and includes
+
+ng generate component  components/Todos || ng g c components/Todos
+
+--> create components/Todos folder and files
+
+### For Include
+
+<app-todos></app-todos>
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
