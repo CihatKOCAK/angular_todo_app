@@ -19,16 +19,25 @@
       border-bottom: 0;
     }
     .id {
-      flex: 1 1 50px;
+      font-weight: bold;
     }
     .content {
-      flex: 1 1 100%;
+      flex: 1;
+      margin-left: 10px;
+      font-size: 14px;
+      text-overflow: ellipsis;
+      overflow: hidden;
       cursor: pointer;
     }
     &.done {
       .content {
-        text-decoration: line-through;
+        text-decoration:  line-through;
+        color: #999;
+        //done decoration animation
+        transition: all 0.2s ease-out;
       }
+
+
     }
 
     .delete {
@@ -39,6 +48,7 @@
       border: none;
       outline: none;
       background: none;
+      border-radius: 5px;
 
       cursor: pointer;
 
@@ -62,7 +72,7 @@
       flex: 1 1 100%;
     }
   }
-  form{
+  form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -71,7 +81,6 @@
     background-color: #fff;
     border-radius: 5px;
     padding: 20px;
-
 
     input {
       text-align: center;
@@ -100,7 +109,6 @@
       }
     }
   }
-
-
-
 }
+
+
